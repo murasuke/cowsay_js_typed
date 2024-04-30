@@ -3,6 +3,7 @@
 ## はじめに
 
 CDNからJSライブラリを読み込むと常に`any`型となってしまい、VSCodeのサポート(IntelliSense)を利用することができません
+(moduleを使わない従来型のjs読み込みの場合全般)
 
 ![img4](./img/image-4.png)
 
