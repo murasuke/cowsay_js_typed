@@ -119,7 +119,7 @@ npm i npm i cowsay@1.6.0
 
 型定義ファイルは `node_modules`の中にある`index.d.ts`ファイルです
 
-![img5](image-5.png)
+![img5](./img/image-5.png)
 
 
 次に、グローバル変数`cowsay`と、型定義の紐づけを行います(VSCodeがわかるように)
