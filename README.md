@@ -1,8 +1,9 @@
-# CDNから読み込んだJSライブラリに対して、後付けで型を適用する方法
+# Moduleではない従来型のJSライブラリに対して、後付けで型を適用する方法
 
 ## はじめに
 
 CDNからJSライブラリを読み込むと常に`any`型となってしまい、VSCodeのサポート(IntelliSense)を利用することができません
+(moduleを使わない従来型のjs読み込みの場合全般)
 
 ![img4](./img/image-4.png)
 
@@ -119,7 +120,7 @@ npm i npm i cowsay@1.6.0
 
 型定義ファイルは `node_modules`の中にある`index.d.ts`ファイルです
 
-![img5](image-5.png)
+![img5](./img/image-5.png)
 
 
 次に、グローバル変数`cowsay`と、型定義の紐づけを行います(VSCodeがわかるように)
