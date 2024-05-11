@@ -215,3 +215,21 @@ console.log(said);
 ![alt text](./img/image-2.png)
 
 
+## おまけ：関数の引数に型の指定を行う(JSDoc)
+
+型定義を`import('パッケージ名')`で読み込むことができる
+
+```javascript
+/**
+ * @param {import('cowsay')} cowsay
+ * @param {string} text
+ * @returns {string}
+ */
+function random_think(cowsay, text) {
+  return cowsay.think({ text });
+}
+
+console.log(random_think(cowsay, '呼んだ?'));
+```
+
+
